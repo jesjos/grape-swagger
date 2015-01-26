@@ -86,7 +86,7 @@ module Grape
                                   'long'
                                 when 'DateTime'
                                   'dateTime'
-                                when 'Numeric'
+                                when 'Numeric', 'Float'
                                   'double'
                                 else
                                   @@documentation_class.parse_entity_name(raw_data_type)
